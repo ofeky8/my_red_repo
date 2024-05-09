@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap.yaml
+  namespace: rr-rr
+  labels:
+    k8slens-edit-resource-version: v1
+data:
+  mapping.json: |
+    {
+      "customer1": ["item1", "item2", "item3"],
+      "customer2": ["item4", "item5"]
+    
+    }
